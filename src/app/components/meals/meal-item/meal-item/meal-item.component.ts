@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MEALS } from 'src/assets/meals-datas';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { MealService } from '../../../../services/meal.service';
 
 @Component({
   selector: 'app-meal-item',
@@ -8,11 +9,15 @@ import { MEALS } from 'src/assets/meals-datas';
 })
 export class MealItemComponent implements OnInit {
 
-  meals = MEALS;
+  meals: any = [];
 
-  constructor() { }
+  constructor(private mealService: MealService, private db: AngularFireDatabase) { }
 
   ngOnInit(): void {
+    const ref = this.mealService.getMeals();
+    console.log(ref)
+    ref.valueChanges().subscribe(resp => {
+      this.meals = resp;
+    })
   }
-
 }

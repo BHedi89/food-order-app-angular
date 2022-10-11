@@ -1,10 +1,10 @@
-<li *ngFor="let m of meals" class="meal">
+<li class="meal" *ngFor="let m of meals; let i = index">
     <div>
-        <h3>{{m.name}}</h3>
-        <div class="description">{{m.description}}</div>
-        <div class="price">${{m.price}}</div>
+        <h3>{{meals[i].name}}</h3>
+        <div class="description">{{meals[i].description}}</div>
+        <div class="price">${{meals[i].price}}</div>
     </div>
     <div>
-        <!-- ide jön a form -->
+        <app-meal-item-form></app-meal-item-form>
     </div>
 </li>

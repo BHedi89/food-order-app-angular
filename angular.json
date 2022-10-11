@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "student-registry-angular:build:production",
+            "firebaseProject": "food-order-app-b91d2",
+            "firebaseHostingSite": "food-order-app-b91d2"
+          }
         }
       }
     }

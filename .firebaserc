@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "food-order-app-b91d2": {
+      "hosting": {
+        "student-registry-angular": [
+          "food-order-app-b91d2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "food-order-app-b91d2"
+  }
+}
