@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { environment } from 'src/environments/environment.prod';
 
@@ -22,7 +23,6 @@ import { ModalComponent } from './components/ui/modal/modal.component';
 import { CartComponent } from './components/cart/cart/cart.component';
 import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
 import { CheckoutComponent } from './components/cart/checkout/checkout.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
