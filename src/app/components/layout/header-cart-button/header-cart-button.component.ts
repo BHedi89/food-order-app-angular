@@ -12,4 +12,6 @@ export class HeaderCartButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openCartModal(): void {}
+
 }
