@@ -22,6 +22,7 @@ import { ModalComponent } from './components/ui/modal/modal.component';
 import { CartComponent } from './components/cart/cart/cart.component';
 import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
 import { CheckoutComponent } from './components/cart/checkout/checkout.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { CheckoutComponent } from './components/cart/checkout/checkout.component
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
